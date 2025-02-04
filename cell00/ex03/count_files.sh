@@ -1,2 +1,2 @@
-files=($(ls))
+files=(*)
 echo "${#files[@]}" 
