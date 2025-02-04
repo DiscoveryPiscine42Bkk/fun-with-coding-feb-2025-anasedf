@@ -3,6 +3,6 @@ if [ $# -eq 0 ]; then
   exit 0
 fi
 
-[ -n "$1" ] && echo "$1"
-[ -n "$2" ] && echo "$2"
-[ -n "$3" ] && echo "$3"
+echo "$1"
+echo "$2"
+echo "$3"
