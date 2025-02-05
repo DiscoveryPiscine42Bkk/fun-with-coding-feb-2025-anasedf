@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    height: 100px;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.first {
+    background-color: #87bfe4;
+}
+
+.second {
+    background-color: #cf88b3;
+}
