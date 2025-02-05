@@ -1,0 +1,30 @@
+.up, .down {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.up {
+    background-image: url("https://images.nrc.nl/L4E3jxmlipOkH_jGbJ3IStZUWrE=/1280x/filters:no_upscale()/s3/static.nrc.nl/bvhw/files/2017/01/54af5f571165494a13354e33202f9d44-1458157446.jpg");
+}
+
+.down {
+    background-image: url("https://media.tenor.com/oR0vyIVth7sAAAAe/hmm-idk.png");
+}
+
+.box {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
