@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
