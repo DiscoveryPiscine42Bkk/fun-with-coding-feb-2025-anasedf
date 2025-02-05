@@ -3,4 +3,3 @@ for x in "$@"; do
         mkdir "ex$x"
     fi
 done
-#-n "$x" &&
