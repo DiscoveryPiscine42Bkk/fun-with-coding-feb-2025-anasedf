@@ -48,7 +48,7 @@ body {
     font-size: 13px;
     color: rgb(100, 100, 100);
     margin: 5px;
-    letter-spacing: -0.3px; /* ลดช่องว่างตัวอักษร */
+    letter-spacing: -0.3px;
 }
 
 .social {
