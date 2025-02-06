@@ -33,17 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".todo-item").forEach(todo => {
             todos.push(todo.textContent);
         });
-        // ใช้คุกกี้ในการจัดเก็บข้อมูล
-        document.cookie = `todos=${JSON.stringify(todos)}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+        localStorage.setItem("todos", JSON.stringify(todos));
+        console.log("Data saved:", todos); // เพิ่ม console.log() เพื่อตรวจสอบ
     }
 
     function loadTodos() {
-        // อ่านค่าคุกกี้
-        const cookies = document.cookie.split(';');
-        const todosCookie = cookies.find(cookie => cookie.trim().startsWith('todos='));
-        if (todosCookie) {
-            const todos = JSON.parse(todosCookie.split('=')[1]);
-            todos.forEach(todoText => addTodo(todoText));
-        }
+        const todos = JSON.parse(localStorage.getItem("todos")) || [];
+        console.log("Data loaded:", todos); // เพิ่ม console.log() เพื่อตรวจสอบ
+        todos.forEach(todoText => addTodo(todoText));
     }
 });
